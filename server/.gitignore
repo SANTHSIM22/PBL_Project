@@ -4,6 +4,9 @@
 .env.production
 .env.*.local
 
+# Dependencies
+node_modules/
+
 # Logs
 logs
 *.log
@@ -13,18 +16,20 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# OS files
+.DS_Store
+Thumbs.db
 
-# Editor directories and files
+# Editor files
 .vscode/*
 !.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Optional: coverage reports
+coverage/
+.nyc_output/
